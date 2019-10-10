@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 20vh;
+    min-height: 70vh;
     background: #424548;
 }
 
@@ -38,12 +38,13 @@ nav{
     width: 0;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     transition: 0.5s;
 }
 
 .menu li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 0 10px 20px;
 }
 
 .navigation input:checked ~ .menu{
@@ -103,6 +104,7 @@ main{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 100v;
@@ -133,9 +135,10 @@ main{
 }
 
 .box{
+    margin: 10px 0 10px 0;;
     position: relative;
-    width: 550px;
-    height: 500px;
+    width: 250px;
+    height: 300px;
     border-radius: 25px;
     background: #000;
     box-shadow: 0 30px 30px rgba(0, 0, 0, .5);  
@@ -214,7 +217,7 @@ main{
     line-height: 1.2em;
     transition: 0.5s;
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
 }
 
 .box:hover .content p{
@@ -287,7 +290,7 @@ main{
     line-height: 1.2em;
     transition: 0.5s;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .box:hover .content p{
@@ -296,3 +299,76 @@ main{
     
 }
 /*FIN DISENO DE LAS CARTAS*/
+
+@media only screen and (min-width: 768px) {
+    nav{
+        min-height: 10vh;       
+    }
+
+    .menu{
+        flex-direction: row;
+    }
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 350px;
+        height: 400px;
+    }
+    
+    .social-media{
+        width: 250px;
+        height: 300px;
+    }
+    
+}
+@media only screen and (min-width: 1024px) {
+    /*DISENO DE NAVBAR*/
+main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100v;
+}
+
+.indications{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indications h2{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;;
+}
+
+/*DISENO DE LAS CARTAS*/
+.card-info-container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.box{
+    position: relative;
+    width: 550px;
+    height: 500px;
+    border-radius: 25px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);  
+}
+
+
+
+
+/*@media only screen and (min-width: 1440px) {}*/
