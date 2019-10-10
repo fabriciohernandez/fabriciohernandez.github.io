@@ -211,13 +211,8 @@ main{
 
 
 .social-media .content p{
-    margin: 10 0 0;
-    padding: 0;
-    opacity: 0;
-    line-height: 1.2em;
-    transition: 0.5s;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .box:hover .content p{
@@ -347,8 +342,22 @@ main{
     width: 450px;
     height: 400px;
 }
+.social-media .content h3{
+
+    font-size: 20px;
+
+}
+
+.box .content h3{
+
+    font-size: 25px;
 
 }
 
 
-/*@media only screen and (min-width: 1440px) {}*/
+.box .content p{
+
+    font-size: 20px;
+}
+
+}
