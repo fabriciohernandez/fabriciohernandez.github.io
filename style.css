@@ -327,32 +327,15 @@ main{
 @media only screen and (min-width: 1024px) {
     /*DISENO DE NAVBAR*/
 main{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100v;
-}
+    display: flex;  
+    flex-direction: row;
 
-.indications{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.indications h2{
-    font-family: 'Amatic SC', cursive;
-    color: white;
-    font-size: 40px;
-    text-transform: uppercase;;
 }
 
 /*DISENO DE LAS CARTAS*/
 .card-info-container{
-    width: 1000px;
+    margin: 0 10px ;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -360,15 +343,12 @@ main{
 }
 
 .box{
-    position: relative;
-    width: 550px;
-    height: 500px;
-    border-radius: 25px;
-    background: #000;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);  
+    
+    width: 450px;
+    height: 400px;
 }
 
-
+}
 
 
 /*@media only screen and (min-width: 1440px) {}*/
