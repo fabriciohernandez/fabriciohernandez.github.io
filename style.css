@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+body{
+    background: #424548;
+}
 
+.material-icons{
+    color: white;
+}
 /*DISENO DE NAVBAR*/
 nav{
-    margin: 0 0 10px 0;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 20vh;
-    background: linear-gradient(#fff 0%,#fff 50%,#42a8f9 50%,#42a8f9 100%);
+    background: #424548;
 }
 
 .navigation{
@@ -38,6 +46,10 @@ nav{
     margin: 0 10px;
 }
 
+.navigation input:checked ~ .menu{
+    width: 450px;
+}
+
 .menu li a{
     text-decoration: none;
     color: #666;
@@ -46,8 +58,45 @@ nav{
     transition: 0.5;
 }
 
-.navigation input:checked ~ .menu{
-    width: 450px;
+.menu li a:hover{
+    color: #ffb34b;
+}
+
+.navigation input{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.navigation span{
+    position: absolute;
+    left: 26px;
+    width: 32px;
+    height: 4px;
+    background: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.navigation input:checked ~ span{
+    background: #ffb34b;
+}
+
+.navigation span:nth-child(2){
+    transform: translateY(-8px);
+}
+
+.navigation input:checked ~ span:nth-child(2){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navigation span:nth-child(3){
+    transform: translateY(8px);
+}
+
+.navigation input:checked ~ span:nth-child(3){
+    transform: translateY(8px) rotate(-45deg);
 }
 /*DISENO DE NAVBAR*/
 main{
@@ -59,23 +108,118 @@ main{
     min-width: 100v;
 }
 
+.indications{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indications h2{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;;
+}
+
 /*DISENO DE LAS CARTAS*/
 .card-info-container{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     border-radius: 20px;
 }
 
 .box{
     position: relative;
-    width: 350px;
-    height: 400px;
+    width: 550px;
+    height: 500px;
     border-radius: 25px;
     background: #000;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);  
+}
+
+.social-media{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);  
+}
+
+.social-media .ImgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+.social-media .ImgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.5s;   
+}
+
+.social-media:hover .ImgBx img{
+    opacity: 0;
+}
+
+.social-media .content{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    border-radius: 20px;
+    background: #ffb34b;
+    transition: 0.5s;
+    overflow: hidden;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.social-media:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    
+}
+
+.social-media .content h3{
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.social-media .content p{
+    margin: 10 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0.5s;
     
 }
 
@@ -94,7 +238,7 @@ main{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: fill;
     transition: 0.5s;   
 }
 
@@ -109,7 +253,7 @@ main{
     width: 80%;
     height: 60px;
     border-radius: 20px;
-    background: white;
+    background: #ffb34b;
     transition: 0.5s;
     overflow: hidden;
 
@@ -128,7 +272,7 @@ main{
 }
 
 .box .content h3{
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -143,6 +287,7 @@ main{
     line-height: 1.2em;
     transition: 0.5s;
     text-align: center;
+    font-size: 30px;
 }
 
 .box:hover .content p{
