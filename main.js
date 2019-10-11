@@ -1,49 +1,52 @@
 //REVISAR ORTOGRAFIA
 
+//----------------DECLARACION DE VARIABLES Y OBTENCION DE SU REFERENCIA------------------
 var lunes = document.querySelector('#lunes');
 var martes = document.querySelector('#martes');
 var miercoles = document.querySelector('#miercoles');
 var jueves = document.querySelector('#jueves');
 var viernes = document.querySelector('#viernes');
 
+var lunesCard = document.querySelectorAll('#lunesCard');
+var martesCard = document.querySelectorAll('#martesCard');
+var miercolesCard = document.querySelectorAll('#miercolesCard');
+var juevesCard = document.querySelectorAll('#juevesCard');
+var viernesCard = document.querySelectorAll('#viernesCard');
+//----------------DECLARACION DE VARIABLES Y OBTENCION DE SU REFERENCIA------------------
+
+function ocultar(elemento){
+    for (var i=0;i<elemento.length;i++){
+        elemento[i].style.display='none';
+    }
+}
+
 lunes.addEventListener('click',function(){
+
+    ocultar(martesCard);
+    ocultar(miercolesCard);
+    ocultar(juevesCard);
+    ocultar(viernesCard);
     
     console.log('Le diste click a lunes');
     var dia = document.querySelector('#dia');
     dia.textContent = 'Lunes inicio de semana';
-    //Seteando informacion de la carta 1
-    var titulo1 = document.querySelector('#title1');
-    titulo1.textContent = 'Avance de proyecto';
-    var info1 = document.querySelector('#info-1');
-    info1.textContent = 'El dia lunes tuve que dar un anvance a un proyecto que se esta llevando junto con otros companeros, el cual consiste en la creacion de una applicacion de escritorio que permita registrar empleados (a groso modo).';
-    var imgLunes1 = document.querySelector('#img1');
-    imgLunes1.src = 'img/imgLunes1.jpeg';
 
-    //seteando informacion de la carta 2
-    var titulo2 = document.querySelector('#title2');
-    titulo2.textContent = 'Estudiar';
-    var info2 = document.querySelector('#info-2');
-    info2.textContent = 'Inicio de semana inicio de clases, dentro de un par de dias tengo que presentar un examen y la verdad no me siento muy preparado...';
-    var imgLune2 = document.querySelector('#img2');
-    imgLunes2.src = 'img/imgLunes2.jpeg';
-
-    //seteando imagen de social media
 })
 
 martes.addEventListener('click',function(){
-    console.log('Le diste click a martes');
+    ocultar(lunesCard);
+    ocultar(miercolesCard);
+    ocultar(juevesCard);
+    ocultar(viernesCard);
 
+    console.log('Le diste click a martes');
     var dia = document.querySelector('#dia');
     dia.textContent = 'Martes despues del inicio de semana';
-    //Seteando informacion de la carta 1
-    var titulo1 = document.querySelector('#title1');
-    titulo1.textContent = 'Jugar un poco';
-    var info1 = document.querySelector('#info-1');
-    info1.textContent = 'Siempre jugar un poco viene genial para no moririse de estres, a pesar de ser malo me la paso bien.';
+ 
 
     //seteando informacion de la carta 2
     var titulo2 = document.querySelector('#title2');
-    titulo2.textContent = 'Seguir trabajando :(';
+    titulo2.textContent = '';
     var info2 = document.querySelector('#info-2');
     info2.textContent = 'Seguir avanzando con el projecto, ahora con mis companeros terminamos de disenar el modelo de la base de datos.';
 
