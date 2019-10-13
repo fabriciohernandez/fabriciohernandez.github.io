@@ -294,6 +294,11 @@ main{
     transition-delay: 0.5s;
     
 }
+
+.socialContent ul{
+    
+    list-style: none;
+}
 /*FIN DISENO DE LAS CARTAS*/
 
 @media only screen and (min-width: 768px) {
