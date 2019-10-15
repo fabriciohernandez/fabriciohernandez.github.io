@@ -83,7 +83,7 @@ jueves.addEventListener('click',function(){
 
     console.log('Le diste click a jueves');
     var dia = document.querySelector('#dia');
-    dia.textContent = 'Jueves de amigos';
+    dia.textContent = 'Juevescito';
 })
 viernes.addEventListener('click',function(){
     ocultar(lunesCard);
