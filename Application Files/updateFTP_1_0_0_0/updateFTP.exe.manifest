@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="updateFTP.exe" version="1.0.0.0" publicKeyToken="060ee40c542f38cf" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="updateFTP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="updateFTP.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="updateFTP.exe" size="9184">
+      <assemblyIdentity name="updateFTP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Myy/7haPeR+rxofcJrU6Z0pYeY3tuzQVlG5KgfqpwXg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="updateFTP.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-Q1H5Q2I\fabri" issuerKeyHash="dce7a82dd4e5a94c8eb1c5559486f85f181fdca3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wiO+W2BHfv4b/hELWlngvnp93e8RV6CxYqmmhmKmmQE=</DigestValue></Reference></SignedInfo><SignatureValue>YIpni6Gur6gLReaKJdS20Stq9m3etgKmFajapzA2DE6yiAKPYe4IzDbpFf3j6YlnaWe6WxfhBKoCPJ0q6YGLF6zzjOABNXOWyAAgdOiNAFwyvVF0x6ZHsukf5YiWifI8W57b/9cjXZc23rPm1UzY+qT0dGKiRQe1+na2AAFOIr8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sKmY2WwFL5p6f3FcYil6t4em+zXtxsT1BZ5a3cldE/c7c5CmnIqB/yL8itS3/8D6ccO8uiFZ2Cx/TeEM1waqRxlT/+pX9IU280yXbeSQk1fdr4skro3b2fvkTDCki0/qXVRK/j5MxyiLVqvEB3snmuqDEzR5VlRgi1R3CxHCBgk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0199a66286a6a962b1a05711efdd7d7abee0595a0b11fe1bfe7e47605bbe23c2" Description="" Url=""><as:assemblyIdentity name="updateFTP.exe" version="1.0.0.0" publicKeyToken="060ee40c542f38cf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-Q1H5Q2I\fabri</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SvbWPkHt514qO6c+m4LBC5KDZJK7V04zWQD98zt+cwE=</DigestValue></Reference></SignedInfo><SignatureValue>fkJyVxRcI3P+hyIIe/+HzFKSUDpQ3bWWAeRfZGXTZrtyiJJM+/1eT2Uhv1iHyekSfUDSghmKcnUPJ4j7u3+K3SXC6bMCAtrtXMNgJcyjuMzhkxNr7OKfL2WLM3wKeImZCNcWi5+6gr9IlUhsQvjos4hEPBf66te24CAIKqn+xDs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sKmY2WwFL5p6f3FcYil6t4em+zXtxsT1BZ5a3cldE/c7c5CmnIqB/yL8itS3/8D6ccO8uiFZ2Cx/TeEM1waqRxlT/+pX9IU280yXbeSQk1fdr4skro3b2fvkTDCki0/qXVRK/j5MxyiLVqvEB3snmuqDEzR5VlRgi1R3CxHCBgk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQQFUqcisq3KVJ9nUrE/GPKDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFEAMQBIADUAUQAyAEkAXABmAGEAYgByAGkwHhcNMjAwNDA3MTgzNzA5WhcNMjEwNDA4MDAzNzA5WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFEAMQBIADUAUQAyAEkAXABmAGEAYgByAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALCpmNlsBS+aen9xXGIpereHpvs17cbE9QWeWt3JXRP3O3OQppyKgf8i/IrUt//A+nHDvLohWdgsf03hDNcGqkcZU//qV/SFNvNMl23kkJNX3a+LJK6N29n75EwwpItP6l1USv4+TMcoi1arxAd7J5rqgxM0eVZUYItUdwsRwgYJAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAl13JFjeJJgMK2OJLHC8QFQANrJrY7SoBV0ZiovcYAxqII9nWZc7MGt+NoQIQdcxDVZI9SBVm8KilEiy8wuUEDZwJOqgDcX7zeBsjwAf8BphOdBjcqDCiRwmFFqTBlkpqS9RvdmWNSaVj3YpNhqqD2oBJ/Z93PgcDBXVS32HI+rQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
